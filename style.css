@@ -1,0 +1,146 @@
+:root {
+    --mainColor: #000000;
+    --accentOne: #00ff00;
+    --accentTwo: #fff;
+}
+
+.navigation-cont {
+    background-color: var(--mainColor);
+    color: var(--accentTwo);
+    font-weight: bold;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.navigation .program:before {
+    content: 'PROGRAM:';
+    color: var(--accentOne);
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+nav:before {
+    content: 'FILTER: ';
+    margin-right: 0.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--accentOne);
+    font-weight: bold;
+    padding: 0.3rem 1.2rem;
+    margin-right: 0.5rem;
+}
+
+nav a:hover {
+    background-color: var(--accentTwo);
+    color: var(--mainColor);
+}
+
+nav .current {
+    background-color: var(--accentTwo);
+    color: var(--mainColor);
+}
+
+.divider {
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1.5rem;
+}
+
+.divider div {
+    background-color: var(--accentOne);
+    height: 0.2rem;
+    display: flex;
+    flex-grow: 5;
+}
+
+.divider .title {
+    background-color: black !important;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+    font-size: 0.8rem;
+    color: var(--accentOne);
+}
+
+.package-container {
+    min-width: 14.5rem;
+}
+
+.package-label {
+    background-color: rgb(107, 43, 0);
+    background-image: url(assets/images/cardboard.jpg);
+    background-size: cover;
+    padding: 1rem 1rem 1rem 0;
+    display: flex;
+    flex-direction: row;
+    font-size: 0.7rem;
+    align-items: center;
+    min-width: 14rem;
+}
+
+.package-label .address {
+    background-color: var(--accentTwo);
+    margin: 0;
+    padding-left: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 4rem;
+    min-width: 97px;
+    padding-right: 1rem;
+}
+
+.package-label .address p{
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.6rem;
+}
+
+.barcode {
+    background-image: url(assets/images/barcode.jpg);
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    background-size: 100%;
+    background-repeat:no-repeat;
+    background-position: 50%;
+    min-height: 4rem;
+    width: 4rem;
+}
+
+.fragile::after{
+    content: 'FRAGILE';
+    color: red;
+    font-weight: bolder;
+    opacity: 50%;
+    font-size: 2rem;
+    height: 2rem;
+    width: 6rem;
+    display: flex;
+    align-self: center;
+    margin: 0 0 1rem -3rem;
+    transform: rotate(19deg);
+}
+
+body {
+    background-image: url(assets/images/warehouse.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
